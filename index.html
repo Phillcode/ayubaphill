@@ -5,14 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://use.fontawesome.com/23aa668a4c.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Krona+One&family=Old+Standard+TT&family=Spectral&display=swap" rel="stylesheet">
     <title>Personal Webpage</title>
 </head>
 <body>
     <div class="main">
-        <div class="container">
-            <h1>Hello World !!!</h1>
-        </div>
+       <div class="nav-bar">
+           <div class="nav-logo">
+            <img src="img/logo.jpg" alt="logo"/>
+           </div>
+           <div class="nav-links" id="nav-links">
+            <i class="fa fa-close" onclick="closeMenu()"></i>
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <button type="button" class="btn">SIGNUP</button>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </div>
+       <div class="banner-title">
+           <h1>...Welcome to <span>a new</span> begining....<br> ..Make <span>awesome</span> discoveries...</h1>
+           <button type="button" class="btn">EXPLORE</button>
+       </div>
+       <div class="vertical-bar">
+           <div class="search-icon">
+            <i class="fa fa-th-list"></i>
+            <i class="fa fa-search"></i>
+           </div>
+           <div class="social-icon">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest"></i>
+           </div>
+       </div>
+       <div class="notification">
+           <div class="contents">
+               <small>Subscribe to the Channel for more info</small>
+               <p><a class="prev" onclick="Prev()" href="#">PREV</a><a class="next" onclick="Next()" href="#">NEXT</a></p>
+           </div>
+           <div class="notification-img">
+               <img src="img/logo.jpg" class="notimg" alt="">
+           </div>
+       </div>
     </div>
-    
-</body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/notification.js"></script>
+    </body>
 </html>
